@@ -1,0 +1,8 @@
+Criterion,Description,Weight
+C1,Ease of registration,0.07871281870757432
+C2,Company reputation,0.04385547887202431
+C3,Service quality,0.11895155078435053
+C4,Timeliness of payments,0.11895155078435053
+C5,Insurance premium,0.27117439299138196
+C6,Insurance coverage level,0.18417710393015918
+C7,Range of covered diseases,0.18417710393015918

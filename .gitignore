@@ -1,0 +1,26 @@
+# Python and local environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.vscode/
+.idea/
+
+# Local archives and private coursework documents
+*.zip
+/report/
+*.docx
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db

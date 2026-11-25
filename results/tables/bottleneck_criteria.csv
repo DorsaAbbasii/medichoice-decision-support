@@ -1,0 +1,37 @@
+Mode,Scenario,Group,Company,Criterion
+Individual,Baseline,Individual,A,C2
+Individual,Baseline,Individual,B,C1
+Individual,Baseline,Individual,C,C2
+Individual,Baseline,Individual,D,C2
+Individual,Insured Event,Individual,A,C2
+Individual,Insured Event,Individual,B,C1
+Individual,Insured Event,Individual,C,C1
+Individual,Insured Event,Individual,D,C1
+Individual,No Insured Event,Individual,A,C4
+Individual,No Insured Event,Individual,B,C4
+Individual,No Insured Event,Individual,C,C4
+Individual,No Insured Event,Individual,D,C6
+Group,Baseline,Patients,A,C2
+Group,Baseline,Patients,B,C1
+Group,Baseline,Patients,C,C2
+Group,Baseline,Patients,D,C6
+Group,Baseline,Healthcare Experts,A,C2
+Group,Baseline,Healthcare Experts,B,C1
+Group,Baseline,Healthcare Experts,C,C1
+Group,Baseline,Healthcare Experts,D,C1
+Group,Insured Event,Patients,A,C2
+Group,Insured Event,Patients,B,C1
+Group,Insured Event,Patients,C,C2
+Group,Insured Event,Patients,D,C2
+Group,Insured Event,Healthcare Experts,A,C2
+Group,Insured Event,Healthcare Experts,B,C1
+Group,Insured Event,Healthcare Experts,C,C1
+Group,Insured Event,Healthcare Experts,D,C1
+Group,No Insured Event,Patients,A,C4
+Group,No Insured Event,Patients,B,C4
+Group,No Insured Event,Patients,C,C4
+Group,No Insured Event,Patients,D,C6
+Group,No Insured Event,Healthcare Experts,A,C2
+Group,No Insured Event,Healthcare Experts,B,C1
+Group,No Insured Event,Healthcare Experts,C,C2
+Group,No Insured Event,Healthcare Experts,D,C2

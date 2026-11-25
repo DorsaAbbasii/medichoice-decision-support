@@ -1,0 +1,5 @@
+company_id,company_name,registration_ease_score,reputation_score,service_quality_score,on_time_payments_pct,annual_premium_rub,annual_coverage_limit_rub,covered_disease_categories
+A,Company A,9,6,7,88,18000,500000,12
+B,Company B,6,9,9,98,36000,1500000,19
+C,Company C,8,8,8,95,24000,1000000,17
+D,Company D,7,7,6,91,15000,400000,10

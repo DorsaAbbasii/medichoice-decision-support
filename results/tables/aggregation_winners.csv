@@ -1,0 +1,11 @@
+Mode,Scenario,Linear Winner,Maximin Winner
+Individual,Baseline,B,C
+Individual,Insured Event,B,C
+Individual,No Insured Event,D,B
+Individual,Expected Utility,D,B
+Individual,Wald Criterion,B,C
+Group,Baseline,B,C
+Group,Insured Event,B,C
+Group,No Insured Event,B,B
+Group,Expected Utility,B,B
+Group,Wald Criterion,B,C

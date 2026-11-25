@@ -1,0 +1,43 @@
+Scenario,Group,Criterion,Weight
+Baseline,Patients,C1,0.14760762408408468
+Baseline,Patients,C2,0.07690014967589995
+Baseline,Patients,C3,0.14760762408408468
+Baseline,Patients,C4,0.0899678546115903
+Baseline,Patients,C5,0.2566174053015294
+Baseline,Patients,C6,0.13369171815872646
+Baseline,Patients,C7,0.14760762408408468
+Baseline,Healthcare Experts,C1,0.04925709500290763
+Baseline,Healthcare Experts,C2,0.04925709500290763
+Baseline,Healthcare Experts,C3,0.14750927588656454
+Baseline,Healthcare Experts,C4,0.19522016844646747
+Baseline,Healthcare Experts,C5,0.08693264612035465
+Baseline,Healthcare Experts,C6,0.24342962920333455
+Baseline,Healthcare Experts,C7,0.2283940903374634
+Insured Event,Patients,C1,0.05018647386851167
+Insured Event,Patients,C2,0.027242908339668217
+Insured Event,Patients,C3,0.13262375718772884
+Insured Event,Patients,C4,0.23270341147335194
+Insured Event,Patients,C5,0.08022255725261909
+Insured Event,Patients,C6,0.2443174804047684
+Insured Event,Patients,C7,0.23270341147335194
+Insured Event,Healthcare Experts,C1,0.027180270625978477
+Insured Event,Healthcare Experts,C2,0.05139236419358902
+Insured Event,Healthcare Experts,C3,0.13456407728317377
+Insured Event,Healthcare Experts,C4,0.23216837279536798
+Insured Event,Healthcare Experts,C5,0.05139236419358902
+Insured Event,Healthcare Experts,C6,0.25165127545415084
+Insured Event,Healthcare Experts,C7,0.25165127545415084
+No Insured Event,Patients,C1,0.19517810865155924
+No Insured Event,Patients,C2,0.1103942065532794
+No Insured Event,Patients,C3,0.19016014445541715
+No Insured Event,Patients,C4,0.03478883234901681
+No Insured Event,Patients,C5,0.3413037860013792
+No Insured Event,Patients,C6,0.064087460994674
+No Insured Event,Patients,C7,0.064087460994674
+No Insured Event,Healthcare Experts,C1,0.09632263193112597
+No Insured Event,Healthcare Experts,C2,0.052287168841756375
+No Insured Event,Healthcare Experts,C3,0.18488851978574386
+No Insured Event,Healthcare Experts,C4,0.09632263193112597
+No Insured Event,Healthcare Experts,C5,0.18488851978574386
+No Insured Event,Healthcare Experts,C6,0.19264526386225195
+No Insured Event,Healthcare Experts,C7,0.19264526386225195
