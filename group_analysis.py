@@ -27,7 +27,7 @@ def main():
 
     print("=" * 70)
     print("MEDICHOICE - GROUP DECISION MAKING")
-    print("Mandatory Additional Task 1")
+    print("Group Decision Analysis")
     print("=" * 70)
 
     tables_dir = Path("results/tables")

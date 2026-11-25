@@ -14,7 +14,7 @@ def main():
 
     print("=" * 65)
     print("MEDICHOICE - MULTI-CRITERIA DECISION SUPPORT SYSTEM")
-    print("Variant 14: Medical Insurance Company Selection")
+    print("MediChoice: Medical Insurance Company Selection")
     print("=" * 65)
 
     results = []

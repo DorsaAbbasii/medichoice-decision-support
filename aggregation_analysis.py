@@ -49,7 +49,7 @@ def main():
 
     print("=" * 70)
     print("MEDICHOICE - AGGREGATION ANALYSIS")
-    print("Mandatory Additional Task 2")
+    print("Nonlinear Aggregation Analysis")
     print("=" * 70)
 
     tables_dir = Path("results/tables")

@@ -1,4 +1,4 @@
-"""MediChoice: interactive dashboard for the existing Variant 14 project."""
+"""MediChoice: interactive dashboard for medical insurance decision support."""
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -19,8 +19,8 @@ COMPANIES = list(ALTERNATIVES)
 
 st.set_page_config(page_title='MediChoice | Decision Support', page_icon='🏥', layout='wide')
 st.title('MediChoice | Medical Insurance Decision Support')
-st.caption('Variant 14 • AHP • Risk and uncertainty • Group decisions • Robust analysis')
-st.info('Academic simulation: companies, comparison judgments, group preferences and IDM observations are hypothetical. This dashboard is not a real insurance recommendation.')
+st.caption('AHP • Risk and uncertainty • Group decisions • Robust analysis')
+st.info('Research prototype: companies, comparison judgments, group preferences and IDM observations are hypothetical. This dashboard is not a real insurance recommendation.')
 
 required = ['global_ranking.csv', 'criteria_weights.csv', 'priority_matrix.csv',
             'utility_matrix.csv', 'risk_uncertainty_results.csv', 'group_decision_summary.csv',
@@ -79,14 +79,14 @@ for scenario, groups in GROUP_CRITERIA_MATRICES.items():
 
 page = st.sidebar.radio('Navigation', ['Overview', 'Dataset', 'AHP and matrices', 'Risk and uncertainty',
     'Group decisions', 'Linear vs Maximin', 'Sensitivity analysis', 'IDM and robustness'])
-st.sidebar.caption('MediChoice • Academic decision-support simulator')
+st.sidebar.caption('MediChoice • Multi-criteria decision-support simulator')
 
 if page == 'Overview':
     cols = st.columns(4)
     cols[0].metric('Alternatives', len(COMPANIES))
     cols[1].metric('Criteria', len(CRITERIA_IDS))
     cols[2].metric('Consistent matrices', f'{sum(calculate_ahp(m)["consistent"] for m, _ in matrices.values())}/{len(matrices)}')
-    cols[3].metric('Assignment probability', '2%')
+    cols[3].metric('Baseline event probability', '2%')
     st.subheader('Baseline global ranking')
     bars(baseline.set_index('Company').loc[COMPANIES, 'Score'].to_numpy(), 'Baseline AHP')
     table(baseline)
@@ -120,7 +120,7 @@ elif page == 'AHP and matrices':
     cols[1].metric('Consistency index', f'{result["ci"]:.6f}')
     cols[2].metric('Consistency ratio', f'{result["cr"]:.2%}')
     cols[3].metric('Validation', 'PASS' if result['consistent'] else 'FAIL')
-    st.caption('Coursework threshold: CR ≤ 20%. For 2×2 reciprocal matrices, RI = 0; consistency is automatic.')
+    st.caption('Model validation threshold: CR ≤ 20%. For 2×2 reciprocal matrices, RI = 0; consistency is automatic.')
     weights = pd.DataFrame({'Item': labels, 'Weight': result['weights']})
     st.plotly_chart(px.bar(weights, x='Item', y='Weight', text_auto='.4f'), use_container_width=True)
     table(weights)

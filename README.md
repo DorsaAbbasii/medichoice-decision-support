@@ -1,6 +1,6 @@
 # MediChoice — Medical Insurance Decision Support
 
-An academic Python decision-support system for selecting among four simulated medical insurance companies using multi-criteria decision making (MCDM).
+A research-oriented Python decision-support prototype for selecting among four simulated medical insurance companies using multi-criteria decision making (MCDM).
 
 ![Baseline ranking](results/figures/global_ranking.png)
 
@@ -26,7 +26,7 @@ An academic Python decision-support system for selecting among four simulated me
 | Group expected utility | B | 0.323313 |
 | Group Wald criterion | B | 0.321555 |
 
-All 17 comparison matrices satisfy the coursework consistency threshold (CR ≤ 20%); the highest CR is 2.66%. All 30 implemented tests passed in the reported Windows run. The individual expected-utility winner switches from D to B at approximately 10.2185% event probability. The baseline linear winner switches from B to D at a premium criterion weight of 47.7163%.
+All 17 comparison matrices satisfy the model’s configured consistency threshold (CR ≤ 20%); the highest CR is 2.66%. All 30 implemented tests passed in the reported Windows run. The individual expected-utility winner switches from D to B at approximately 10.2185% event probability. The baseline linear winner switches from B to D at a premium criterion weight of 47.7163%.
 
 ![Probability sensitivity](results/figures/probability_sensitivity_individual.png)
 
@@ -86,6 +86,6 @@ medichoice-decision-support/
 └── requirements.txt
 ```
 
-## Academic context and limitations
+## Model assumptions and limitations
 
-Coursework, Variant 14 — selection of a medical insurance company, for Deep Machine Learning, Part 2. The four companies, numerical profiles, pairwise judgments, stakeholder preferences and IDM observation counts are hypothetical. The 2% insured-event probability is supplied by the assignment; it is not an empirical estimate. The comparison matrices are fixed in source code rather than generated from the illustrative CSV. This prototype is not a real insurance recommendation. The tests cover the implemented numerical cases, not every possible input or dashboard interaction.
+Originally developed as an academic project, MediChoice is a research prototype. The four companies, numerical profiles, pairwise judgments, stakeholder preferences and IDM observation counts are hypothetical. The baseline insured-event probability of 2% is a scenario assumption, not an empirical estimate. The 20% consistency threshold is specific to this model configuration, not a universal AHP standard. The comparison matrices are fixed in source code rather than generated from the illustrative CSV. This prototype is not a real insurance recommendation. The tests cover the implemented numerical cases, not every possible input or dashboard interaction.
